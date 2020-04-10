@@ -1,4 +1,3 @@
-apply plugin: 'maven-publish'
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
@@ -28,7 +27,7 @@ android {
 
 }
 
-def githubProperties = new Properties()
+/*def githubProperties = new Properties()
 githubProperties.load(new FileInputStream(rootProject.file("gradle.properties"))) //Set env variable GPR_USER & GPR_API_KEY if not adding a properties file
 
 def getVersionName = { ->
@@ -37,7 +36,7 @@ def getVersionName = { ->
 
 def getArtificatId = { ->
     return "gpaylib" // Replace with library name ID
-}
+}*/
 
 /*publishing {
     publications {
